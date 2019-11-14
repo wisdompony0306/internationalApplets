@@ -1,0 +1,60 @@
+@import "./mixins.scss";
+/* Taro UI 主题  -- start */
+$color-brand: #424143;
+$color-brand-light: #717172;
+$color-brand-dark: #353436;
+
+// $color-brand: #ff3e15;
+// $color-brand-light: #ff6e50;
+// $color-brand-dark: #cc3211;
+
+// $color-brand: #def1a4;
+// $color-brand-light: #e6f5bb;
+// $color-brand-dark: #b2c183;
+/* Taro UI 主题  -- end */
+
+$primary-color: #ab2b2b;
+$disabled-color: #dddddd;
+
+$black: #000000;
+$white: #ffffff;
+
+$text-color: #333333;
+$text-color-light: #666666;
+$text-color-lighter: #999999;
+
+$border-color: #dddddd;
+$border-radius: 4px;
+
+$image-bg: #f4f4f4;
+$bg-color: #ecf0f3;
+$money-color: #ff5400;
+/* 自定义主题 */
+.at-search-bar{
+  &::after {
+    border-bottom-width: 0;
+  }
+}
+.at-divider__content{
+  background: $bg-color;
+}
+
+.at-card{
+  border-color: $bg-color;
+}
+
+// 公共返回顶部按钮样式
+.go-back{
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  &.at-button{
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+  }
+}
