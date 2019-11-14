@@ -1,0 +1,27 @@
+@import "@/styles/theme.scss";
+.goods-list{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  .goods-list__item{
+    margin-top: 20px;
+  }
+  &--card, &--coupon, &--pin{
+    display: flex;
+    flex-flow: row wrap;
+    .goods-list__item{
+      width: 50%;
+      &--left{
+        padding-right: 10px;
+      }
+      &--right{
+        padding-left: 10px;
+      }
+    }
+  }
+  &--coupon-live {
+    padding: 0 20px;
+    .goods-list__item{}
+  }
+}
+.search-recommend__hd{}

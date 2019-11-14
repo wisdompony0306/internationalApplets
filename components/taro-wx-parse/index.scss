@@ -1,0 +1,25 @@
+@import "./wxParse/wxParse.wxss";
+.taro-wx-parse{
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 20px;
+  .wxParse-p{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .wxParse-span{
+    font-size: 12PX;
+  }
+  .wxParse-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    &.desc_anchor{
+      width: 1PX;
+      height: 1PX;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+@import "@/styles/theme.scss";
+.goods-item--coupon{
+  $height: 220px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  &__left{
+    display: flex;
+    width: $height;
+    height: $height;
+    padding: 20px;
+    box-sizing: border-box;
+    &-item-img{
+      width: 100%;
+      height: $height - 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+  &__content{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: $height;
+    padding: 20px;
+    &__hd{
+      &__title{
+        font-size: 30px;
+        line-height: 1.2em;
+        color: $text-color;
+        @include lamp-clamp(1);
+      }
+      &__desc{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.2em;
+        color: $text-color-lighter;
+        @include lamp-clamp(1);
+      }
+    }
+    
+    &__bd{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      .coupon{
+        border: 1px solid $primary-color;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        &__left{
+          height: 40px;
+          width: 40px;
+          background-color: $primary-color;
+          font-size: 24px;
+          font-weight: 300;
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+        }
+        &__right{
+          height: 40px;
+          font-size: 30px;
+          color: $primary-color;
+          padding: 0 10px;
+        }
+      }
+      .volume{
+        font-size: 24px;
+        color: $text-color-lighter;
+        font-weight: 300;
+      }
+    }
+
+    &__ft{
+      line-height: 1em;
+      .real-price,.origin-price {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1em;
+      }
+      .real-price{
+        color: $text-color-lighter;
+        margin-right: 20px;
+        .icon{
+          color: $text-color;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .em{
+          color: $text-color;
+          font-size: 28px;
+          font-weight: 400;
+        }
+      }
+      .origin-price{
+        color: $text-color-lighter;
+        text-decoration: line-through;
+        text-decoration-color: $text-color-lighter;
+      }
+    }
+  }
+
+
+
+  &__bd{
+    padding: 20px;
+    &__title{
+      font-size: 12PX;
+      line-height: 16PX;
+      @include lamp-clamp(1);
+    }
+    &__tag{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      .volume{
+        font-size: 10PX;
+        color: $text-color-lighter;
+        font-weight: 300;
+      }
+    }
+    &__price{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      &--real-price, &--zk-final-price{
+        font-size: 10PX;
+        color: $text-color-lighter;
+        font-weight: 300;
+        margin-right: 10px;
+        .real-price{
+          font-size: 14PX;
+          color: $primary-color;
+          font-weight: bold;
+        }
+        .real-price-icon{
+          color: $primary-color;
+        }
+      }
+      &--zk-final-price{
+        position: relative;
+        .zk-final-price{
+          color: $text-color-lighter;
+          text-decoration: line-through;
+          text-decoration-color: $text-color-lighter;
+        }
+      }
+      
+    }
+  }
+}

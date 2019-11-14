@@ -1,0 +1,12 @@
+@import "@/styles/theme.scss";
+.goods-item{
+  box-sizing: border-box;
+  &--card {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__hd{
+    &-item-img{
+    }
+  }
+}

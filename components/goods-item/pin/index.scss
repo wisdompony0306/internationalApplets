@@ -1,0 +1,66 @@
+@import "@/styles/theme.scss";
+.goods-item--card{
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #ffffff;
+  &__hd{
+    display: flex;
+    width: 100%;
+    &-item-img{
+      width: 100%;
+      height: 345px;
+      object-fit: cover;
+    }
+  }
+  &__bd{
+    padding: 20px;
+    &__title{
+      font-size: 12PX;
+      line-height: 16PX;
+      @include lamp-clamp(1);
+    }
+    &__tag{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      .volume{
+        font-size: 10PX;
+        color: $text-color-lighter;
+        font-weight: 300;
+      }
+    }
+    &__price{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      &--real-price, &--zk-final-price{
+        font-size: 10PX;
+        color: $text-color-lighter;
+        font-weight: 300;
+        margin-right: 10px;
+        .real-price{
+          font-size: 14PX;
+          color: $primary-color;
+          font-weight: bold;
+        }
+        .real-price-icon{
+          color: $primary-color;
+        }
+      }
+      &--zk-final-price{
+        position: relative;
+        .zk-final-price{
+          color: $text-color-lighter;
+          text-decoration: line-through;
+          text-decoration-color: $text-color-lighter;
+        }
+      }
+      
+    }
+  }
+}
