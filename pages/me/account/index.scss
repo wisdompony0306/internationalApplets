@@ -1,0 +1,92 @@
+@import "@/styles/theme.scss";
+// @import "@/styles/iconfont.scss";
+.me__account{
+  $tipsHeight: 36px;
+  $imgSize: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  // 用户头像
+  &__avatar{
+    width: $imgSize;
+    height: $imgSize + $tipsHeight/2;
+    position: relative;
+    &--img{
+      width: $imgSize;
+      height: $imgSize;
+      border-radius: 50%;
+    }
+    &--tips{
+      position: absolute;
+      top: $imgSize - $tipsHeight/2;
+      left: 0;
+      right: 0;
+      height: $tipsHeight;
+      line-height: $tipsHeight;
+      background-color: #f8ead4;
+    }
+  }
+  // 用户昵称
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: $imgSize + $tipsHeight/2;
+    padding: 10px 0;
+    .userinfo{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .nick{
+        font-size: 16PX;
+      }
+      .grade{
+        margin-left: 20px;
+        padding: 6px 15px;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 8PX;
+        border-radius: 20px;
+      }
+    }
+    .invitecode{
+      font-size: 12PX;
+      font-weight: 300;
+    }
+  }
+  // 我要升级
+  &__right{
+    flex: 1;
+    position: relative;
+    height: 100%;
+    .upgrade{
+      position: absolute;
+      top: 50%;
+      right: -40px;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,.4);
+      padding: 6px 10px 6px 20px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      &--icon{
+        margin-right: 10px;
+        // margin-top: 5px;
+        font-size: 12PX;
+        color: red;
+        width: 30px;
+        height: 30px;
+      }
+      &--txt{
+        font-size: 12PX;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+}

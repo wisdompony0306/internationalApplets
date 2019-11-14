@@ -1,0 +1,50 @@
+@import "@/styles/theme.scss";
+.me{
+  &__wrap {
+    background: $bg-color;
+    &__my-orders, &__vip-member, &__essential-tool{
+      // 重写taro-ui 组件样式
+      .at-card{
+        margin: 0 20px;
+        .at-card__header-title{
+          font-weight: bold;
+        }
+        .at-card__header-extra{
+          color: $text-color-lighter;
+        }
+        .at-card__content{
+          padding: 0;
+        }
+        .at-grid__flex{
+          height: 150px;
+          .content-inner__text{
+            font-size: 26px;
+          }
+          .content-inner__img{
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+    &__account{
+      .me__account__avatar{
+        &--tips{
+          .at-button{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 0;
+            line-height: initial;
+            border: none;
+            color: #856947;
+            font-size: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

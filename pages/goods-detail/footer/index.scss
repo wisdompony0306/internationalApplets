@@ -1,0 +1,95 @@
+@import "@/styles/theme.scss";
+.goods-detail-footer{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px 20px;
+  background-color: #ffffff;
+  &--iphonex{
+    padding: 10px 30px 35px;
+  }
+  &__left, &__right{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 100%;
+    &-item{
+      flex: 1;
+      height: 100%;
+    }
+  }
+  // 
+  &__left{
+    margin-right: 30px;
+    &-item{
+      &-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        line-height: initial;
+        .iconfont{
+          font-size: 50px;
+          color: $text-color-light;
+        }
+        .text{
+          font-size: 12PX;
+          color: $text-color-light;
+        }
+      }
+      // 主页
+      &--home{}
+    }
+  }
+  // 分享赚, 自购省
+  &__right{
+    flex: 1;
+    &-item{
+      &-btn{
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        .iconfont{
+          font-size: 40px;
+          color: #ffffff;
+          margin-right: 10px;
+        }
+        .text{
+          font-size: 14PX;
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }
+      &--share{
+        background-color: #000000;
+        border-radius: 50px 0 0 50px;
+      }
+      &--buyself{
+        background-color: $money-color;
+        border-radius: 0 50px 50px 0;
+        .iconfont{
+          margin-top: -5px;
+        }
+      }
+      
+    }
+  }
+
+  &__share-modal{
+    &__wrap{
+      width: 600px;
+      height: 900px;
+      margin: -100px auto 0;
+      &-img{
+        width: 100%;
+        height: 100%;
+        .img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

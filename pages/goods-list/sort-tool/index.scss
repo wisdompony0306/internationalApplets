@@ -1,0 +1,153 @@
+@import "@/styles/theme.scss";
+// @import "@/styles/iconfont.scss";
+.sort-tool{
+  .sort-tool__wrap{
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    &__left{
+      height: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      color: $money-color;
+      font-size: 12PX;
+      &__icon{
+        font-size: 6PX;
+        margin-left: 10px;
+      }
+    }
+    &__right{
+      height: 100%;
+      flex: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      &__item{
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: $text-color-light;
+        font-size: 12PX;
+        padding: 0 20px;
+        &__icon{
+          font-size: 12PX;
+          color: $text-color-lighter;
+          margin-right: 6px;
+          &.iconfont-squarecheckfill{
+            color: $money-color;
+          }
+        }
+        &--first-child{
+          // padding-right: 0;
+        }
+        &--last-child{
+          position: relative;
+          padding-right: 0;
+          .sort-tool__wrap__right__item__col-line{
+            position: absolute;
+            left: 0;
+            top: 20px;
+            bottom: 20px;
+            width: 1px;
+            background-color: $border-color;
+          }
+          .sort-tool__wrap__right__item__icon{
+            margin-right: 0;
+            margin-left: 6px;
+          }
+          
+        }
+      }
+    }
+  }
+  // 排序模态框
+  &__sort{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 100%);
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+    overflow: hidden;
+    visibility: hidden;
+    &__mask{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.3);
+    }
+    &__wrap{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      // animation: ease both;
+      transform: translate3d(0,-100%,0);
+      transition: transform 300ms cubic-bezier(.36,.66,.04,1);
+      // transition: all 300ms cubic-bezier(.47,0,.745,.715);
+    }
+    &--active{
+      opacity: 1;
+      visibility: visible;
+      .sort-tool__sort__wrap{
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+  // 筛选模态框
+  &__filter{
+    &__wrap{
+      &__hd,&__bd{
+        padding: 0 30px;
+      }
+      &__hd{
+        padding-top: 40px;
+        font-size: 14PX;
+        font-weight: bold;
+      }
+      &__bd{
+        margin-top: 30px;
+        &__item-title{
+          color: $text-color-light;
+          font-size: 10PX;
+          margin-bottom: 20px;
+        }
+        // 价格区间
+        &__price-range{}
+
+        // 商家服务
+        &__shop-filter{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          &__item{
+            margin-right: 10px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &__ft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        &__btn{
+          flex: 1;
+        }
+      }
+    }
+  }
+}

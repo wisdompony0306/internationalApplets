@@ -1,0 +1,31 @@
+.goods-detail{
+  $footerHeight: 120px;
+  position: relative;
+  &__wrap{
+    padding-bottom: $footerHeight;
+  }
+  &-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: $footerHeight;
+    box-shadow: 0 5px 10rpx rgba(0, 0, 0, .4);
+    // background-color: red;
+    .at-button{
+      height: 100%;
+      border-radius: 0;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .canvas-box {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 999999rpx;
+    top: 0;
+  }
+}

@@ -1,0 +1,18 @@
+@import "@/styles/theme.scss";
+.goods-detail-seller{
+  padding: 30px 20px;
+  &__hd{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    &-img{
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+    &-text{
+      font-size: 32px;
+      color: $text-color;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "@/styles/theme.scss";
+// @import "@/styles/iconfont.scss";
+.essential-tool{
+  margin-top: 20px;
+  &__wrap{
+    &--item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .price{
+        font-size: 14PX;
+        color: $money-color;
+      }
+      .title{
+        font-size: 12PX;
+        color: $text-color;
+      }
+    }
+  }
+}

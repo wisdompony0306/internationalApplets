@@ -1,0 +1,51 @@
+@import "@/styles/theme.scss";
+.submit-order-search-bar{
+  margin: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: 4px solid $money-color;
+  border-radius: 5px;
+  height: 80px;
+  background-color: #ffffff;
+  &__search{
+    $clearSize: 35px;
+    $inputPadding: 30px;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    &-input{
+      height: 100%;
+      font-size: 12PX;
+      padding-left: $inputPadding;
+      padding-right: $inputPadding + $clearSize + $inputPadding / 2;
+      &--placeholder{
+        color: $text-color-lighter;
+      }
+    }
+    &-clear{
+      position: absolute;
+      top: 50%;
+      right: $inputPadding;
+      height: $clearSize;
+      width: $clearSize;
+      transform: translateY(-50%);
+      .icon{
+        width: $clearSize;
+        height: $clearSize;
+        line-height: $clearSize;
+        border-radius: 50%;
+        background-color: #dedede;
+        .iconfont{
+          font-size: 20px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  &__btn{
+    width: 160px;
+    height: 100%;
+    background-color: $money-color;
+  }
+}

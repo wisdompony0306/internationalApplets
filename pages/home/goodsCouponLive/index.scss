@@ -1,0 +1,15 @@
+@import "@/styles/theme.scss";
+.goods-coupon-live{
+  &__hd{
+    text-align: center;
+    font-size: 16PX;
+    color: $primary-color;
+    background-color: #ffffff;
+    padding-top: 20px;
+  }
+  &__bd{
+    &__list{
+      
+    }
+  }
+}

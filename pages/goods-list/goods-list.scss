@@ -1,0 +1,51 @@
+@import "@/styles/theme.scss";
+.goods-list {
+  position: relative;
+  // 筛选工具栏 - 超级搜索(物料搜索api)
+  &__sort-tool, .sort-tool-class{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 10010;
+    .sort-tool__filter__wrap__bd{
+      .at-tag{
+        padding: 0 16px;
+      }
+    } 
+    .sort-tool__filter__wrap__ft{
+      .at-button{
+        border-radius: 0;
+        &--secondary{
+          background-color: #ecf0f3;
+          border-color: #ecf0f3;
+        }
+      }
+    }
+  }
+  // 筛选工具 - 物料推荐api
+  &__sub-material-tool, .sub-material-tool-class{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 10010;
+  }
+  // 商品列表
+  &__wrap{
+    background:#ecf0f3;
+    // 筛选工具栏 - 超级搜索(物料搜索api)
+    &--sort-tool{
+      padding-top: 90px;
+    }
+    // 筛选工具 - 物料推荐api
+    &--sub-material-tool{
+      padding-top: 85px;
+    }
+    &__list{
+      margin: 0 20px 0;
+    }
+  }
+}

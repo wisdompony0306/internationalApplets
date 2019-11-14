@@ -1,0 +1,19 @@
+@import "@/styles/theme.scss";
+.goods-detail-photo_desc{
+  padding: 0 20px;
+  &__hd{
+    font-size: 32px;
+    color: $text-color;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+  }
+  &__bd{
+    // font-size: 0;
+    &-img{
+      width: 710px;
+      height: 710px;
+      margin-bottom: 20px;
+    }
+  }
+}

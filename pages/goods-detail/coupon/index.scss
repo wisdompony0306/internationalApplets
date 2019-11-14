@@ -1,0 +1,123 @@
+@import "@/styles/theme.scss";
+.goods-detail-coupon{
+  padding: 30px 20px;
+  $bg-color: #ecf0f3;
+  background-color: $bg-color;
+  &__wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 190rpx;
+    position: relative;
+    // background: linear-gradient(to right, #f0752f, #ef665f);
+    background: linear-gradient(to right, #f0752f 0,#ef665f 80%, #ef665f 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    &-icon{
+      $iconSize: 60px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      &--left, &--right{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: $iconSize;
+        height: $iconSize;
+        border-radius: 50%;
+        background-color: $bg-color;
+      }
+      &--left{
+        left: -$iconSize / 2;
+      }
+      &--right{
+        right: -$iconSize / 2;
+      }
+      &--bubble{
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.15);
+        &-1{
+          width: 100px;
+          height: 100px;
+          left: 80px;
+          bottom: -20px;
+        }
+        &-2{
+          width: 60px;
+          height: 60px;
+          left: 200px;
+          top: 20px;
+        }
+        &-3{
+          width: 140px;
+          height: 140px;
+          left: 260px;
+          bottom: -70px;
+        }
+        &-4{
+          width: 50px;
+          height: 50px;
+          left: 380px;
+          top: 20px;
+        }
+        &-5{
+          width: 160px;
+          height: 160px;
+          left: 460px;
+          bottom: -40px;
+        }
+      }
+    }
+    &-left,&-right{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    &-center{
+      $iconSize: 8px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: $iconSize;
+      padding: 30px 0;
+      height: 100%;
+      flex: 1;
+      .circle{
+        width: $iconSize;
+        height: $iconSize;
+        border-radius: 50%;
+        background-color: $bg-color;
+      }
+    }
+    &-left{
+      color: $bg-color;
+      padding: 30px 30px 30px 60px;
+      .coupon-amount{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 16PX;
+      }
+      .coupon-text{
+        font-size: 12PX;
+        word-spacing: -2px;
+        &--first{
+          margin-right: 20px;
+        }
+      }
+    }
+    &-right{
+      padding: 30px 60px 30px 30px;
+      font-size: 16PX;
+      color: $bg-color;
+      position: relative;
+    }
+  }
+}

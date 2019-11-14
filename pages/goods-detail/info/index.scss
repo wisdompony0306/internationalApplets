@@ -1,0 +1,52 @@
+@import "@/styles/theme.scss";
+
+.goods-detail-info{
+  background-color: #ffffff;
+  // 商品标题
+  &__title{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 30px 20px;
+    &-img{
+      width: 50px;
+      height: 50px;
+      margin-top: 8px;
+      margin-right: 20px;
+    }
+    &-text{
+      flex: 1;
+      font-size: 32px;
+      color:$text-color;
+      font-weight: bold;
+      @include lamp-clamp(2);
+    }
+  }
+  // 商品价格
+  &__price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px;
+    // padding: 0 20px;
+    .price{
+      .price-discount{
+        font-size: 32px;
+        color: $money-color;
+        font-weight: bold;
+      }
+      .price-origin{
+        margin-left: 10px;
+        font-size: 22px;
+        color: $text-color-light;
+        text-decoration: line-through;
+        text-decoration-color: $text-color-light;
+      }
+    }
+    .volume,.provcity{
+      font-size: 28px;
+      color: $text-color-light;
+    }
+  }
+}
