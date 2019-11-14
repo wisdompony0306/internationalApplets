@@ -1,0 +1,88 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "%E4%BC%98%E6%83%A0%E5%88%B8%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"description": "淘宝、拼多多、京东优惠券",
+	"appid": "wx4b5a83b09062170f",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": 0,
+					"name": "聚划算拼团",
+					"pathName": "pages/goods-list/goods-list",
+					"query": "title=聚划算拼团&materialId=4071&goodsItemType=pin&__key_=15534523000901",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "搜索",
+					"pathName": "pages/super-search/super-search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "商品详情",
+					"pathName": "pages/goods-detail/goods-detail",
+					"query": "goodsId=584731710875",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "个人中心",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "超级搜索 - 商品列表",
+					"pathName": "pages/goods-list/goods-list",
+					"query": "title=超级搜索&q=哑铃",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提交订单",
+					"pathName": "pages/submit-order/submit-order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "成为会员",
+					"pathName": "pages/join-member/join-member",
+					"query": "codeType=3&suid=1&inviterCode=6VZD2C",
+					"scene": null
+				}
+			]
+		}
+	}
+}
